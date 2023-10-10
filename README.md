@@ -1,52 +1,68 @@
-# WEBPAGE
-
-   
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar Example</title>
+    <title>My Simple Website</title>
     <style>
-        /* Add some basic styling for the navbar */
+        /* CSS styles can be added here */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f2f2f2;
         }
-        
-        ul.navbar {
-            list-style-type: none;
+        header {
             background-color: #333;
-            overflow: hidden;
-            margin: 0;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
             padding: 0;
         }
-
-        ul.navbar li {
-            float: left;
+        nav li {
+            display: inline;
+            margin-right: 10px;
         }
-
-        ul.navbar li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        ul.navbar li a:hover {
-            background-color: #555;
+        section {
+            padding: 20px;
         }
     </style>
 </head>
 <body>
-    <ul class="navbar">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h2>About Us</h2>
+        <p>This is a simple website created with HTML.</p>
+    </section>
+    <section>
+        <h2>Services</h2>
+        <ul>
+            <li>Web Design</li>
+            <li>Graphic Design</li>
+            <li>SEO Optimization</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Contact Us</h2>
+        <p>Email: contact@example.com</p>
+        <p>Phone: 123-456-7890</p>
+    </section>
 </body>
 </html>
-
